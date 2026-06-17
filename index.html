@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Las que invierten · Birrería Macha</title>
-<meta name="description" content="Sé accionista de Birrería Macha desde $1 millón. A través de la Bolsa de Valores de Colombia. Rifa de una acción en vivo el 2 de julio.">
+<meta name="description" content="Sé accionista de Birrería Macha desde $1 millón. A través de la Bolsa de Valores de Colombia. Evento 4 de julio con @larubiainmoral y @sualexdeconfianza.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GK3K55068H"></script>
@@ -19,624 +19,463 @@
 </script>
 <style>
   :root {
-    --pink: #E8006D;
-    --pink-light: #fce4f0;
-    --pink-dark: #9b004a;
-    --pink-deeper: #6b0033;
+    --orange: #E8451A;
+    --blue: #4DC8E8;
     --black: #111111;
-    --off-black: #1a1a1a;
-    --dark-card: #222222;
-    --gray-light: #f5f5f3;
-    --gray-mid: #888;
-    --gray-border: #e5e5e5;
+    --cream: #F0EDE6;
     --white: #ffffff;
-    --text-body: #444444;
-    --font-display: 'DM Serif Display', Georgia, serif;
+    --gray: #666666;
+    --gray-light: #f5f5f3;
+    --gray-border: #e5e5e5;
+    --font-display: 'Bebas Neue', 'Arial Black', sans-serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
-  body {
-    font-family: var(--font-body);
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-body);
-    background: var(--white);
-    -webkit-font-smoothing: antialiased;
-  }
-
+  body { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--black); background: var(--white); -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; display: block; }
+  a { color: inherit; }
 
   /* NAV */
-  .nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--white);
-    border-bottom: 1px solid var(--gray-border);
-    padding: 0 1.5rem;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-logo {
-    font-family: var(--font-display);
-    font-size: 18px;
-    color: var(--pink);
-    text-decoration: none;
-  }
-  .nav-cta {
-    background: var(--pink);
-    color: var(--white);
-    border: none;
-    border-radius: 100px;
-    padding: 8px 20px;
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    transition: opacity 0.15s;
-  }
+  .nav { position: sticky; top: 0; z-index: 100; background: var(--black); padding: 0 1.5rem; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { font-family: var(--font-display); font-size: 22px; color: var(--orange); text-decoration: none; letter-spacing: 0.02em; }
+  .nav-logo .star { color: var(--white); }
+  .nav-cta { background: var(--orange); color: var(--white); border: none; border-radius: 4px; padding: 8px 18px; font-family: var(--font-body); font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; transition: opacity 0.15s; }
   .nav-cta:hover { opacity: 0.85; }
 
-  /* URGENCY BAR */
-  .urgency {
-    background: var(--pink);
-    color: var(--white);
-    text-align: center;
-    padding: 10px 1.5rem;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-  }
+  /* URGENCY */
+  .urgency { background: var(--orange); color: var(--white); text-align: center; padding: 9px 1.5rem; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 
   /* HERO */
-  .hero {
-    background: var(--off-black);
-    color: var(--white);
-    padding: 3rem 1.5rem 2.5rem;
-    text-align: center;
-  }
-  .hero-eyebrow {
-    display: inline-block;
-    background: rgba(232,0,109,0.15);
-    color: #ff6eb4;
-    border: 1px solid rgba(232,0,109,0.3);
-    border-radius: 100px;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 4px 14px;
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.03em;
-  }
-  .hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 8vw, 2.75rem);
-    line-height: 1.15;
-    margin-bottom: 1rem;
-    color: var(--white);
-  }
-  .hero-title em {
-    color: var(--pink);
-    font-style: italic;
-  }
-  .hero-sub {
-    font-size: 15px;
-    color: #aaa;
-    max-width: 360px;
-    margin: 0 auto 1.75rem;
-    line-height: 1.65;
-  }
+  .hero { position: relative; background: var(--black); color: var(--white); padding: 3rem 1.5rem 2.5rem; text-align: center; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('LOCALES/MACHA_SEPT-35.jpg'); background-size: cover; background-position: center; opacity: 0.2; }
+  .hero-content { position: relative; z-index: 1; }
+  .hero-eyebrow { display: inline-block; background: rgba(232,69,26,0.15); color: #ff8c6e; border: 1px solid rgba(232,69,26,0.35); border-radius: 4px; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; margin-bottom: 1.25rem; }
+  .hero-title { font-family: var(--font-display); font-size: clamp(3.2rem, 15vw, 5.5rem); line-height: 0.92; margin-bottom: 1rem; color: var(--white); letter-spacing: 0.02em; }
+  .hero-title .orange { color: var(--orange); }
+  .hero-title .blue { color: var(--blue); }
+  .hero-sub { font-size: 15px; color: #ccc; max-width: 380px; margin: 0 auto 1.75rem; line-height: 1.75; }
+  .hero-btns { display: flex; flex-direction: column; gap: 10px; max-width: 360px; margin: 0 auto; }
+  .hero-fine { font-size: 11px; color: #555; margin-top: 12px; }
 
   /* VIDEO */
-  .video-wrap {
-    position: relative;
-    background: #0a0a0a;
-    border-radius: 12px;
-    aspect-ratio: 16/9;
-    max-width: 540px;
-    margin: 0 auto 1.75rem;
-    overflow: hidden;
-    border: 1px solid #333;
-  }
-  .video-wrap iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  .video-placeholder-inner {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .play-circle {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: var(--pink);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  .video-wrap { position: relative; background: #0a0a0a; border-radius: 8px; aspect-ratio: 16/9; max-width: 540px; margin: 0 auto 1.75rem; overflow: hidden; border: 1px solid #333; }
+  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+  .video-placeholder-inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+  .play-circle { width: 56px; height: 56px; border-radius: 50%; background: var(--orange); display: flex; align-items: center; justify-content: center; }
   .play-circle svg { width: 22px; height: 22px; fill: white; margin-left: 3px; }
   .video-caption { font-size: 13px; color: #888; }
 
-  /* HERO BUTTONS */
-  .hero-btns { display: flex; flex-direction: column; gap: 10px; max-width: 360px; margin: 0 auto; }
-  .btn-primary {
-    display: block;
-    background: var(--pink);
-    color: var(--white);
-    border: none;
-    border-radius: 100px;
-    padding: 15px 24px;
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: opacity 0.15s;
-  }
+  /* BUTTONS */
+  .btn-primary { display: block; background: var(--orange); color: var(--white); border: none; border-radius: 4px; padding: 15px 24px; font-family: var(--font-body); font-size: 15px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; transition: opacity 0.15s; }
   .btn-primary:hover { opacity: 0.85; }
-  .btn-outline {
-    display: block;
-    background: transparent;
-    color: #ccc;
-    border: 1px solid #444;
-    border-radius: 100px;
-    padding: 14px 24px;
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: border-color 0.15s;
-  }
-  .btn-outline:hover { border-color: #888; }
-  .hero-fine {
-    font-size: 11px;
-    color: #555;
-    margin-top: 12px;
-    text-align: center;
-  }
+  .btn-outline { display: block; background: transparent; color: #ccc; border: 1px solid #555; border-radius: 4px; padding: 14px 24px; font-family: var(--font-body); font-size: 15px; cursor: pointer; text-align: center; text-decoration: none; }
+  .btn-outline:hover { border-color: #999; }
+  .btn-blue { display: block; background: var(--blue); color: var(--black); border: none; border-radius: 4px; padding: 15px 24px; font-family: var(--font-body); font-size: 15px; font-weight: 700; cursor: pointer; text-align: center; text-decoration: none; transition: opacity 0.15s; margin-bottom: 10px; }
+  .btn-blue:hover { opacity: 0.85; }
+  .btn-outline-white { display: block; background: transparent; color: #ccc; border: 1px solid #444; border-radius: 4px; padding: 14px 24px; font-family: var(--font-body); font-size: 15px; cursor: pointer; text-align: center; text-decoration: none; }
+  .btn-outline-white:hover { border-color: #888; }
+  .btn-white { display: block; background: var(--white); color: var(--orange); border: none; border-radius: 4px; padding: 16px 32px; font-family: var(--font-body); font-size: 16px; font-weight: 700; cursor: pointer; text-align: center; text-decoration: none; max-width: 360px; margin: 0 auto; }
+  .btn-white:hover { opacity: 0.9; }
 
   /* SECTIONS */
-  .section {
-    padding: 2.5rem 1.5rem;
-    border-bottom: 1px solid var(--gray-border);
-  }
-  .section:last-child { border-bottom: none; }
-  .section-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--pink);
-    margin-bottom: 6px;
-  }
-  .section-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.4rem, 5vw, 1.85rem);
-    color: var(--black);
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .section-body {
-    font-size: 14px;
-    color: var(--text-body);
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-  }
+  .section { padding: 3rem 1.5rem; border-bottom: 1px solid var(--gray-border); }
+  .section-cream { background: var(--cream); }
+  .section-black { background: var(--black); color: var(--white); }
+  .section-orange { background: var(--orange); color: var(--white); }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+  .section-title { font-family: var(--font-display); font-size: clamp(2.2rem, 9vw, 3.5rem); color: var(--black); line-height: 0.95; margin-bottom: 14px; letter-spacing: 0.01em; }
+  .section-body { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.25rem; }
 
-  /* CONCURSO */
-  .concurso-section {
-    background: var(--pink-light);
-    padding: 2.5rem 1.5rem;
-    border-bottom: 1px solid #f4b8d4;
-  }
-  .counter-block {
-    background: var(--off-black);
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    margin: 1.25rem 0;
-  }
-  .counter-number {
-    font-family: var(--font-display);
-    font-size: 56px;
-    color: var(--pink);
-    line-height: 1;
-  }
-  .counter-label { font-size: 13px; color: #aaa; margin-top: 6px; }
-  .requisitos {
-    background: var(--white);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    border: 1px solid #f4b8d4;
-    margin-bottom: 1.25rem;
-  }
-  .requisito-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--pink-light);
-    font-size: 13px;
-    color: var(--pink-dark);
-  }
-  .requisito-row:last-child { border-bottom: none; }
-  .req-check { color: var(--pink); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  /* EDUCACION */
+  .edu-card { background: var(--white); border-radius: 10px; padding: 1.25rem; margin-bottom: 12px; border-left: 4px solid var(--orange); }
+  .edu-title { font-size: 15px; font-weight: 600; color: var(--black); margin-bottom: 6px; }
+  .edu-body { font-size: 14px; color: #555; line-height: 1.75; }
 
-  /* FORM */
-  .form-group { margin-bottom: 12px; }
-  .form-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--pink-dark);
-    margin-bottom: 5px;
-    letter-spacing: 0.02em;
-  }
-  .form-input {
-    width: 100%;
-    padding: 11px 14px;
-    border: 1.5px solid #f4b8d4;
-    border-radius: 8px;
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--black);
-    background: var(--white);
-    transition: border-color 0.15s;
-    outline: none;
-  }
-  .form-input:focus { border-color: var(--pink); }
-  .form-input::placeholder { color: #c9a0b8; }
-  .form-file {
-    width: 100%;
-    padding: 10px;
-    border: 1.5px dashed #f4b8d4;
-    border-radius: 8px;
-    background: var(--white);
-    font-size: 13px;
-    color: var(--pink-dark);
-    cursor: pointer;
-  }
-  .form-hint { font-size: 11px; color: var(--pink-dark); margin-top: 4px; opacity: 0.8; }
-  .btn-pink-solid {
-    width: 100%;
-    background: var(--pink);
-    color: var(--white);
-    border: none;
-    border-radius: 100px;
-    padding: 15px;
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: opacity 0.15s;
-  }
-  .btn-pink-solid:hover { opacity: 0.85; }
+  /* TRUST ROWS */
+  .trust-row { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .trust-row:last-child { border-bottom: none; }
+  .trust-icon { font-size: 26px; flex-shrink: 0; margin-top: 2px; }
+  .trust-title { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+  .trust-body { font-size: 13px; color: #bbb; line-height: 1.65; }
 
-  /* COMO INVERTIR */
-  .how-step {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--gray-border);
-  }
-  .how-step:last-child { border-bottom: none; }
-  .how-num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--pink-light);
-    color: var(--pink);
-    font-family: var(--font-display);
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .how-title { font-size: 14px; font-weight: 500; color: var(--black); margin-bottom: 3px; }
-  .how-body { font-size: 13px; color: var(--text-body); line-height: 1.6; }
+  /* HISTORIA */
+  .historia-img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 1.5rem 0; }
+  .stat { background: var(--orange); border-radius: 8px; padding: 1rem; text-align: center; }
+  .stat-num { font-family: var(--font-display); font-size: 2.4rem; color: var(--white); line-height: 1; }
+  .stat-label { font-size: 11px; color: rgba(255,255,255,0.8); margin-top: 4px; line-height: 1.4; }
+  .fundador-card { padding: 1rem; border: 1px solid var(--gray-border); border-radius: 10px; margin-bottom: 10px; }
+  .fundador-name { font-size: 15px; font-weight: 600; color: var(--black); }
+  .fundador-role { font-size: 12px; color: var(--gray); margin-bottom: 6px; }
+  .fundador-text { font-size: 13px; color: #444; line-height: 1.65; }
 
-  /* STATS */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 1.25rem 0;
-  }
-  .stat {
-    background: var(--gray-light);
-    border-radius: 10px;
-    padding: 1rem;
-  }
-  .stat-num {
-    font-family: var(--font-display);
-    font-size: 26px;
-    color: var(--pink);
-    line-height: 1;
-  }
-  .stat-label { font-size: 12px; color: var(--gray-mid); margin-top: 4px; }
-
-  /* PROGRESS */
-  .progress-wrap { margin: 1rem 0; }
-  .progress-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: var(--gray-mid);
-    margin-bottom: 6px;
-  }
-  .progress-bar {
-    height: 6px;
-    background: var(--gray-light);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    background: var(--pink);
-    border-radius: 3px;
-    width: 42%;
-  }
-  .progress-fine { font-size: 11px; color: var(--gray-mid); margin-top: 5px; }
-
-  /* BENEFICIOS */
-  .benefit-list { border: 1px solid var(--gray-border); border-radius: 10px; overflow: hidden; margin: 1rem 0; }
-  .benefit-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 14px;
-    border-bottom: 1px solid var(--gray-border);
-  }
-  .benefit-row:last-child { border-bottom: none; }
-  .benefit-icon { color: var(--pink); font-size: 20px; flex-shrink: 0; margin-top: 1px; }
-  .benefit-title { font-size: 14px; font-weight: 500; color: var(--black); }
-  .benefit-sub { font-size: 12px; color: var(--text-body); margin-top: 1px; }
+  /* MERCADO */
+  .mercado-compare { display: flex; gap: 1rem; align-items: flex-end; margin: 1.5rem 0; flex-wrap: wrap; }
+  .mercado-num { font-family: var(--font-display); font-size: clamp(3.5rem, 16vw, 6rem); line-height: 0.9; color: var(--white); }
+  .mercado-label { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 4px; }
+  .mercado-vs { font-family: var(--font-display); font-size: 2rem; color: rgba(255,255,255,0.25); align-self: center; }
 
   /* EMISION */
+  .emision-box { background: rgba(255,255,255,0.1); border-radius: 10px; padding: 1rem 1.25rem; margin-top: 1.5rem; }
   .emision-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .emision-table tr { border-bottom: 1px solid #f4b8d4; }
+  .emision-table tr { border-bottom: 1px solid rgba(255,255,255,0.1); }
   .emision-table tr:last-child { border-bottom: none; }
-  .emision-table td { padding: 8px 0; }
-  .emision-table td:first-child { color: var(--pink-dark); }
-  .emision-table td:last-child { text-align: right; font-weight: 500; color: var(--pink-deeper); }
+  .emision-table td { padding: 9px 0; }
+  .emision-table td:first-child { color: rgba(255,255,255,0.65); }
+  .emision-table td:last-child { text-align: right; font-weight: 600; color: var(--white); }
+
+  /* PROGRESS */
+  .progress-wrap { margin: 1.25rem 0; }
+  .progress-meta { display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 6px; }
+  .progress-bar { height: 6px; background: rgba(255,255,255,0.15); border-radius: 3px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--white); border-radius: 3px; width: 42%; }
+
+  /* BENEFICIOS */
+  .benefit-list { border: 1px solid var(--gray-border); border-radius: 10px; overflow: hidden; margin: 1.25rem 0; }
+  .benefit-row { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-bottom: 1px solid var(--gray-border); }
+  .benefit-row:last-child { border-bottom: none; }
+  .benefit-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .benefit-title { font-size: 14px; font-weight: 600; color: var(--black); }
+  .benefit-sub { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+  /* HOW STEPS */
+  .how-step { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--gray-border); }
+  .how-step:last-child { border-bottom: none; }
+  .how-num { width: 36px; height: 36px; border-radius: 50%; background: var(--orange); color: var(--white); font-family: var(--font-display); font-size: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .how-title { font-size: 14px; font-weight: 600; color: var(--black); margin-bottom: 3px; }
+  .how-body { font-size: 13px; color: #555; line-height: 1.65; }
+
+  /* CONCURSO */
+  .concurso-section { background: var(--cream); padding: 3rem 1.5rem; border-bottom: 1px solid #ddd; }
+  .counter-block { background: var(--black); border-radius: 10px; padding: 1.5rem; text-align: center; margin: 1.25rem 0; }
+  .counter-number { font-family: var(--font-display); font-size: 60px; color: var(--orange); line-height: 1; }
+  .counter-label { font-size: 13px; color: #aaa; margin-top: 6px; }
+  .requisitos { background: var(--white); border-radius: 10px; padding: 1rem 1.25rem; border: 1px solid #ddd; margin-bottom: 1.25rem; }
+  .requisito-row { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid #eee; font-size: 13px; color: #444; }
+  .requisito-row:last-child { border-bottom: none; }
+  .req-check { color: var(--orange); font-size: 14px; flex-shrink: 0; margin-top: 2px; }
 
   /* EVENTO */
-  .evento-section {
-    background: var(--off-black);
-    color: var(--white);
-    padding: 2.5rem 1.5rem;
-    border-bottom: 1px solid #333;
-  }
-  .evento-date {
-    font-family: var(--font-display);
-    font-size: 2.5rem;
-    color: var(--pink);
-    line-height: 1;
-    margin-bottom: 6px;
-  }
-  .evento-card {
-    background: var(--dark-card);
-    border-radius: 12px;
-    padding: 1.25rem;
-    margin: 1.25rem 0;
-  }
-  .evento-step {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 8px 0;
-    border-bottom: 1px solid #333;
-    font-size: 13px;
-    color: #ccc;
-  }
-  .evento-step:last-child { border-bottom: none; color: var(--white); font-weight: 500; }
-  .evento-num {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: #333;
-    color: #aaa;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .evento-num.star { background: var(--pink); color: var(--white); font-size: 11px; }
-  .btn-outline-white {
-    display: block;
-    background: transparent;
-    color: #ccc;
-    border: 1px solid #444;
-    border-radius: 100px;
-    padding: 14px 24px;
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: border-color 0.15s;
-    width: 100%;
-  }
-  .btn-outline-white:hover { border-color: #888; }
+  .evento-section { background: var(--black); color: var(--white); padding: 3rem 1.5rem; border-bottom: 1px solid #222; }
+  .evento-date-big { font-family: var(--font-display); font-size: clamp(4rem, 18vw, 7rem); color: var(--blue); line-height: 0.9; margin-bottom: 4px; }
+  .cupos-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(232,69,26,0.15); border: 1px solid rgba(232,69,26,0.35); border-radius: 4px; padding: 6px 12px; margin: 1rem 0; font-size: 12px; font-weight: 700; color: var(--orange); letter-spacing: 0.06em; text-transform: uppercase; }
+  .evento-card { background: #1a1a1a; border-radius: 10px; padding: 1.25rem; margin: 1.25rem 0; }
+  .agenda-row { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #2a2a2a; }
+  .agenda-row:last-child { border-bottom: none; }
+  .agenda-time { font-family: var(--font-display); font-size: 20px; color: var(--blue); flex-shrink: 0; width: 52px; padding-top: 2px; }
+  .agenda-speaker { font-size: 10px; color: #888; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .agenda-topic { font-size: 13px; color: #ccc; line-height: 1.55; }
+  .agenda-topic strong { color: var(--white); }
 
-  /* QUIENES */
-  .creator-card {
-    border: 1px solid var(--gray-border);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    margin-bottom: 10px;
-  }
+  /* CREADORES */
+  .creator-card { border: 1px solid var(--gray-border); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 10px; }
   .creator-top { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
-  .avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--pink-light);
-    color: var(--pink-dark);
-    font-family: var(--font-display);
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .creator-handle { font-size: 14px; font-weight: 500; color: var(--black); }
-  .creator-name { font-size: 12px; color: var(--gray-mid); margin-top: 1px; }
-  .creator-quote { font-size: 13px; color: var(--text-body); line-height: 1.65; font-style: italic; }
-  .transparency-note {
-    background: var(--gray-light);
-    border-left: 3px solid var(--pink);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 14px;
-    font-size: 12px;
-    color: var(--text-body);
-    line-height: 1.65;
-    margin-top: 12px;
-  }
-  .transparency-note strong { color: var(--black); font-weight: 500; }
+  .creator-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--orange); color: var(--white); font-family: var(--font-display); font-size: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .creator-handle { font-size: 14px; font-weight: 600; color: var(--black); }
+  .creator-name { font-size: 12px; color: var(--gray); }
+  .creator-quote { font-size: 13px; color: #444; line-height: 1.65; font-style: italic; }
+  .transparency-note { background: var(--gray-light); border-left: 4px solid var(--orange); padding: 12px 14px; font-size: 12px; color: #444; line-height: 1.65; margin-top: 12px; }
+
+  /* PRENSA */
+  .prensa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 1.25rem; }
+  .prensa-item { border: 1px solid var(--gray-border); border-radius: 8px; padding: 14px; text-decoration: none; color: var(--black); transition: border-color 0.15s; display: flex; align-items: center; justify-content: center; min-height: 56px; text-align: center; }
+  .prensa-item:hover { border-color: var(--orange); }
+  .prensa-name { font-family: var(--font-display); font-size: 17px; letter-spacing: 0.02em; line-height: 1.1; }
 
   /* FAQ */
   .faq-item { padding: 14px 0; border-bottom: 1px solid var(--gray-border); }
   .faq-item:last-child { border-bottom: none; }
-  .faq-q { font-size: 14px; font-weight: 500; color: var(--black); margin-bottom: 5px; }
-  .faq-a { font-size: 13px; color: var(--text-body); line-height: 1.65; }
+  .faq-q { font-size: 14px; font-weight: 600; color: var(--black); margin-bottom: 6px; }
+  .faq-a { font-size: 13px; color: #555; line-height: 1.7; }
 
   /* CIERRE */
-  .cierre {
-    background: var(--off-black);
-    color: var(--white);
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
-  .cierre-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.6rem, 6vw, 2.2rem);
-    line-height: 1.2;
-    margin-bottom: 8px;
-    color: var(--white);
-  }
-  .cierre-title em { color: var(--pink); font-style: italic; }
-  .cierre-sub { font-size: 13px; color: #aaa; margin-bottom: 1.75rem; line-height: 1.6; }
-  .cierre-fine { font-size: 11px; color: #444; margin-top: 16px; }
-
-  /* TAGS */
-  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
-  .tag {
-    background: var(--gray-light);
-    color: var(--gray-mid);
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 100px;
-  }
-
-  /* FORM SUCCESS */
-  .form-success {
-    display: none;
-    background: #e8f5e9;
-    border: 1px solid #a5d6a7;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    color: #2e7d32;
-    font-size: 14px;
-    margin-top: 12px;
-  }
+  .cierre { background: var(--orange); color: var(--white); padding: 3.5rem 1.5rem; text-align: center; }
+  .cierre-title { font-family: var(--font-display); font-size: clamp(2.8rem, 12vw, 5rem); line-height: 0.92; margin-bottom: 14px; }
+  .cierre-sub { font-size: 14px; color: rgba(255,255,255,0.85); margin-bottom: 1.75rem; line-height: 1.7; }
+  .cierre-fine { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 20px; }
 
   @media (min-width: 600px) {
-    .hero { padding: 4rem 2rem 3rem; }
-    .section { padding: 3rem 2rem; }
-    .concurso-section { padding: 3rem 2rem; }
-    .evento-section { padding: 3rem 2rem; }
-    .cierre { padding: 4rem 2rem; }
+    .section { padding: 4rem 2rem; }
+    .concurso-section { padding: 4rem 2rem; }
+    .evento-section { padding: 4rem 2rem; }
+    .cierre { padding: 5rem 2rem; }
+    .stat-grid { grid-template-columns: repeat(4, 1fr); }
+    .prensa-grid { grid-template-columns: repeat(4, 1fr); }
+    .hero-btns { flex-direction: row; justify-content: center; }
   }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
 <body>
 
 <nav class="nav">
-  <a href="#" class="nav-logo">Las que invierten</a>
-  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=nav&utm_campaign=macha_julio2025&utm_content=btn_nav" target="_blank" rel="noopener" class="nav-cta">Invertir ahora</a>
+  <a href="#" class="nav-logo">BIRRERÍA <span class="star">✦</span> MACHA</a>
+  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=nav&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="nav-cta">Invertir ahora</a>
 </nav>
 
 <div class="urgency">
-  Rifa de una acción en vivo · Evento 2 de julio · Invierte antes y participa
+  ✦ 75 CUPOS · EVENTO 4 JULIO · INVIERTE ANTES DEL 3 JULIO A LAS 5PM ✦
 </div>
 
+<!-- HERO -->
 <section class="hero">
-  <span class="hero-eyebrow">@larubiainmoral × @sualexdeconfianza para Birrería Macha</span>
-  <h1 class="hero-title">Sé accionista de<br><em>Birrería Macha</em><br>desde $1 millón</h1>
-  <p class="hero-sub">La cervecería bogotana que le cambió la cara al mercado entra a la Bolsa de Valores de Colombia. Esta es tu oportunidad.</p>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">@larubiainmoral × @sualexdeconfianza · para Birrería Macha</span>
+    <h1 class="hero-title">SÉ<br><span class="orange">DUEÑA</span><br>DE UNA<br><span class="blue">BIRRERÍA</span></h1>
+    <p class="hero-sub">Macha abre su capital a través de la Bolsa de Valores de Colombia. Invierte desde $1.000.000 y sé accionista de la cervecería bogotana que ya funciona.</p>
 
-  <!-- VIDEO: reemplaza el src del iframe con tu link de YouTube cuando lo tengan grabado -->
-  <div class="video-wrap">
-    <div class="video-placeholder-inner">
-      <div class="play-circle">
-        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    <div class="video-wrap">
+      <div class="video-placeholder-inner">
+        <div class="play-circle">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <p class="video-caption">Ana María y Alejo te cuentan · ~90 seg</p>
       </div>
-      <p class="video-caption">Ana María y Alejo te cuentan por qué · ~90 seg</p>
+      <!-- Cuando tengas el video: <iframe src="https://www.youtube.com/embed/TU_ID?rel=0" allowfullscreen></iframe> -->
     </div>
-    <!-- CUANDO TENGAN EL VIDEO: descomenta esta línea y borra el video-placeholder-inner de arriba -->
-    <!-- <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID?autoplay=0&rel=0" allowfullscreen></iframe> -->
+
+    <div class="hero-btns">
+      <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=hero&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="btn-primary">Invertir en Macha →</a>
+      <a href="#evento" class="btn-outline">Registrarme al evento del 4 de julio</a>
+    </div>
+    <p class="hero-fine">A través de A2censo · Bolsa de Valores de Colombia</p>
+  </div>
+</section>
+
+<!-- QUÉ ES INVERTIR -->
+<section class="section section-cream" id="que-es-invertir">
+  <p class="section-label">¿Nunca has invertido?</p>
+  <h2 class="section-title">EMPIEZA AQUÍ</h2>
+  <p class="section-body">Invertir es hacer que tu plata trabaje para ti. Aquí te explicamos todo desde cero, sin jerga financiera.</p>
+
+  <div class="edu-card">
+    <p class="edu-title">💡 ¿Qué es una acción?</p>
+    <p class="edu-body">Una acción es un pedazo de una empresa. Si compras acciones de Macha, eres dueña de un porcentaje de la cervecería. Eso significa que si Macha crece, tu parte también vale más.</p>
+  </div>
+  <div class="edu-card">
+    <p class="edu-title">📈 ¿Cómo puedo ganar plata?</p>
+    <p class="edu-body">De dos formas: <strong>valorización</strong> — la empresa vale más y tu acción sube de precio — y <strong>dividendos</strong> — cuando la empresa reparte utilidades entre sus accionistas. Macha proyecta ventas de más de $7.000 millones con la nueva expansión.</p>
+  </div>
+  <div class="edu-card">
+    <p class="edu-title">⚠️ ¿Hay riesgos?</p>
+    <p class="edu-body">Sí, y es importante decirlo. Toda inversión tiene riesgo. Los negocios pueden tener malos años. Macha lleva 6 años operando con crecimiento constante, pero eso no garantiza el futuro. Invierte solo lo que no necesitas en el corto plazo.</p>
+  </div>
+  <div class="edu-card">
+    <p class="edu-title">💧 ¿Qué pasa si necesito la plata?</p>
+    <p class="edu-body">Esta inversión no tiene liquidez inmediata. No es un CDT que puedes sacar cuando quieras. Es capital privado de largo plazo. Piénsalo como una apuesta por el futuro de Macha, no como un ahorro de emergencia.</p>
+  </div>
+</section>
+
+<!-- POR QUÉ ES SERIO -->
+<section class="section section-black" id="seguridad">
+  <p class="section-label" style="color: var(--blue);">Por qué es serio</p>
+  <h2 class="section-title" style="color: var(--white);">ESTO NO ES<br>UNA PIRÁMIDE</h2>
+  <p class="section-body" style="color: #aaa;">Colombia tiene una historia dolorosa con estafas financieras. Entendemos si tienes dudas. Aquí te explicamos por qué esto es completamente diferente.</p>
+
+  <div class="trust-row">
+    <span class="trust-icon">🏛️</span>
+    <div>
+      <p class="trust-title">Bolsa de Valores de Colombia (BVC)</p>
+      <p class="trust-body">El mercado oficial de valores del país, con más de 20 años de operación. No es una empresa nueva ni desconocida.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <span class="trust-icon">✅</span>
+    <div>
+      <p class="trust-title">A2censo — plataforma regulada de la BVC</p>
+      <p class="trust-body">A2censo es la plataforma oficial de financiación colaborativa de la BVC. Supervisada y autorizada por el Estado colombiano.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <span class="trust-icon">🔒</span>
+    <div>
+      <p class="trust-title">Supervisada por la Superfinanciera</p>
+      <p class="trust-body">La Superintendencia Financiera de Colombia regula y vigila todas las operaciones. Hay un ente del Estado que cuida el proceso.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <span class="trust-icon">📄</span>
+    <div>
+      <p class="trust-title">Comprobante oficial de inversión</p>
+      <p class="trust-body">Al invertir recibes un documento legal que prueba que eres accionista. No es una promesa verbal. Es un título valor.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <span class="trust-icon">🍺</span>
+    <div>
+      <p class="trust-title">Macha existe y puedes ir a verla</p>
+      <p class="trust-body">No es una empresa fantasma. Son 3 birrerías físicas en Bogotá, 30 empleados y 6 años de operación. Puedes ir a tomar una pinta y ver tu inversión con tus propios ojos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORIA MACHA -->
+<section class="section" id="historia">
+  <p class="section-label">La historia</p>
+  <h2 class="section-title">EL SUEÑO<br>DE UN CERVECERO</h2>
+
+  <img src="LOCALES/Macha_Marzo-1.jpg" alt="Interior Birrería Macha" class="historia-img">
+
+  <p class="section-body">Todo empezó hace más de 50 años. El bisabuelo de Valentina —el último cervecero independiente de Colombia— tuvo que cerrar su cervecería en 1975. Ese día se perdió un negocio, pero nació una promesa.</p>
+  <p class="section-body">Décadas después, <strong>Valentina Facundo</strong> y <strong>Pablo Bermúdez</strong> fundaron Birrería Macha con un solo local y un sueño: ser la cervecería independiente más grande de Colombia.</p>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-num">90%</div><div class="stat-label">Crecimiento anual (últimos 4 años)</div></div>
+    <div class="stat"><div class="stat-num">200K+</div><div class="stat-label">Litros de birra vendidos</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Birrerías en Bogotá</div></div>
+    <div class="stat"><div class="stat-num">18</div><div class="stat-label">Estilos de cerveza</div></div>
   </div>
 
-  <div class="hero-btns">
-    <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=hero&utm_campaign=macha_julio2025&utm_content=btn_hero_primary" target="_blank" rel="noopener" class="btn-primary">Invertir en Macha ahora →</a>
-    <a href="#evento" class="btn-outline">Registrarme al evento del 2 de julio</a>
+  <p style="font-size: 13px; color: var(--gray); margin-bottom: 1.5rem;">🏆 Mejor cervecería independiente de Colombia 2021–22 y 2024–25 · Top 80 restaurantes de Bogotá · 30 empleados</p>
+
+  <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 1rem; letter-spacing: 0.01em;">LOS FUNDADORES</h3>
+
+  <!-- Reemplaza fundadores.jpg con la foto que compartiste. Nómbrala fundadores.jpg y ponla en la carpeta LOCALES -->
+  <img src="LOCALES/fundadores.jpg" alt="Valentina Facundo y Pablo Bermúdez — fundadores de Birrería Macha" style="width: 100%; height: 300px; object-fit: cover; object-position: top center; border-radius: 10px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+
+  <div class="fundador-card">
+    <p class="fundador-name">Valentina Facundo</p>
+    <p class="fundador-role">CEO y Cofundadora · <a href="https://www.linkedin.com/in/valentina-facundo/" target="_blank" rel="noopener" style="color: var(--orange);">LinkedIn ↗</a></p>
+    <p class="fundador-text">Nieta del último cervecero independiente de Colombia. Empezó Macha desde cero y la convirtió en el referente de la escena artesanal bogotana.</p>
   </div>
-  <p class="hero-fine">A través de A2censo · Bolsa de Valores de Colombia</p>
+
+  <div class="fundador-card">
+    <p class="fundador-name">Pablo Bermúdez</p>
+    <p class="fundador-role">COO y Cofundador · <a href="https://www.linkedin.com/in/pablobermudez/" target="_blank" rel="noopener" style="color: var(--orange);">LinkedIn ↗</a></p>
+    <p class="fundador-text">Con experiencia en AB InBev y SABMiller, trae el rigor operacional de las grandes cervecerías al proyecto independiente más ambicioso de Colombia.</p>
+  </div>
+</section>
+
+<!-- POR QUÉ AHORA -->
+<section class="section section-orange" id="oportunidad">
+  <p class="section-label" style="color: rgba(255,255,255,0.65);">La oportunidad</p>
+  <h2 class="section-title" style="color: var(--white);">UNA MINA DE ORO<br><span style="opacity: 0.35;">CON ESPUMA</span></h2>
+
+  <div class="mercado-compare">
+    <div>
+      <div class="mercado-num">0.5%</div>
+      <p class="mercado-label">Cerveza artesanal<br>en Colombia</p>
+    </div>
+    <div class="mercado-vs">VS</div>
+    <div>
+      <div class="mercado-num">3%</div>
+      <p class="mercado-label">Promedio en<br>Latinoamérica</p>
+    </div>
+  </div>
+
+  <p style="font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.75; margin-bottom: 1.5rem;">Colombia tiene espacio para crecer <strong style="color: var(--white);">600%</strong> en el mercado artesanal. Macha quiere liderar ese crecimiento. Con tu inversión van a abrir cinco birrerías más para seguir tomándose Bogotá, barrio a barrio, pinta a pinta.</p>
+
+  <div class="emision-box">
+    <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 12px;">Detalles de la emisión</p>
+    <table class="emision-table">
+      <tr><td>Valoración empresa</td><td>$20.000M COP</td></tr>
+      <tr><td>Monto buscado</td><td>$2.000M COP</td></tr>
+      <tr><td>Participación ofrecida</td><td>10%</td></tr>
+      <tr><td>Precio por acción</td><td>$5.714 COP</td></tr>
+      <tr><td>Inversión mínima</td><td>$1.000.000 (175 acciones)</td></tr>
+      <tr><td>Proyección ventas 2032</td><td>$45.000M COP</td></tr>
+    </table>
+    <div class="progress-wrap" style="margin-top: 1rem;">
+      <div class="progress-meta"><span>Progreso de la ronda</span><span>Meta: $2.000M COP</span></div>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+  </div>
+
+  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=oportunidad&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="btn-white" style="margin-top: 1.5rem;">Ver campaña en A2censo →</a>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section" id="beneficios">
+  <p class="section-label">Lo que obtienes</p>
+  <h2 class="section-title">BENEFICIOS DE<br>SER ACCIONISTA</h2>
+
+  <div class="benefit-list">
+    <div class="benefit-row">
+      <span class="benefit-icon">📈</span>
+      <div><p class="benefit-title">Potencial de valorización</p><p class="benefit-sub">Si Macha crece, tus acciones valen más. Proyectan ventas de $45.000M para 2032.</p></div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-icon">💰</span>
+      <div><p class="benefit-title">Posibles dividendos</p><p class="benefit-sub">Cuando la empresa reparta utilidades, tú participas como accionista. No está garantizado, pero es el objetivo.</p></div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-icon">%</span>
+      <div><p class="benefit-title">10% de descuento vitalicio</p><p class="benefit-sub">En cualquier sede de Birrería Macha, para siempre.</p></div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-icon">🍺</span>
+      <div><p class="benefit-title">Pinta de accionista</p><p class="benefit-sub">Tu vaso personalizado en la birrería.</p></div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-icon">🎂</span>
+      <div><p class="benefit-title">Jarra gratis en tu cumpleaños</p><p class="benefit-sub">En cualquier sede, cada año.</p></div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-icon">🧪</span>
+      <div><p class="benefit-title">Acceso prioritario al lab</p><p class="benefit-sub">Las birras experimentales, primero para ti.</p></div>
+    </div>
+  </div>
+
+  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=beneficios&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 1.5rem;">Invertir en Macha desde $1.000.000 →</a>
+</section>
+
+<!-- CÓMO INVERTIR -->
+<section class="section" id="como">
+  <p class="section-label">Cómo invertir</p>
+  <h2 class="section-title">EN 3 PASOS<br>DESDE TU CELULAR</h2>
+  <p class="section-body">El proceso completo toma menos de 10 minutos.</p>
+
+  <div class="how-step">
+    <div class="how-num">1</div>
+    <div>
+      <p class="how-title">Crea tu cuenta en A2censo</p>
+      <p class="how-body">Entra a a2censo.com — la plataforma oficial de la Bolsa de Valores de Colombia. Solo necesitas tu cédula y un correo electrónico.</p>
+    </div>
+  </div>
+  <div class="how-step">
+    <div class="how-num">2</div>
+    <div>
+      <p class="how-title">Busca la campaña de Macha y elige tu monto</p>
+      <p class="how-body">Desde $1.000.000 puedes invertir. Eso equivale a 175 acciones a $5.714 cada una. Puedes invertir más si quieres.</p>
+    </div>
+  </div>
+  <div class="how-step">
+    <div class="how-num">3</div>
+    <div>
+      <p class="how-title">Confirma y guarda tu comprobante</p>
+      <p class="how-body">A2censo te envía el comprobante por correo. Súbelo en el formulario de abajo para quedar inscrita en la rifa del 4 de julio.</p>
+    </div>
+  </div>
+
+  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=como_invertir&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 1.5rem;">Ir a A2censo a invertir →</a>
 </section>
 
 <!-- CONCURSO -->
 <section class="concurso-section" id="concurso">
   <p class="section-label">Concurso</p>
-  <h2 class="section-title" style="color: var(--pink-deeper);">Gánate una acción de Macha</h2>
-  <p class="section-body" style="color: var(--pink-dark);">Invierte antes del 2 de julio, sube tu comprobante aquí abajo y participas en la rifa en vivo. El ganador se lleva acciones por $1.000.000 COP sorteadas en el evento.</p>
+  <h2 class="section-title">GÁNATE UNA<br>ACCIÓN DE MACHA</h2>
+  <p class="section-body">Invierte antes del <strong>3 de julio a las 5:00 pm</strong>, sube tu comprobante aquí y participas en la rifa en vivo el 4 de julio. El ganador se lleva acciones por $1.000.000 COP.</p>
 
   <div class="counter-block">
-    <!-- ACTUALIZA ESTE NÚMERO cuando veas nuevos registros en tu Google Sheet -->
     <div class="counter-number" id="contador">0</div>
     <div class="counter-label">personas ya registraron su inversión</div>
   </div>
 
   <div class="requisitos">
     <div class="requisito-row">
-      <span class="req-check">✓</span>
+      <span class="req-check">✦</span>
       <span>Haber invertido en Macha a través de A2censo</span>
     </div>
     <div class="requisito-row">
-      <span class="req-check">✓</span>
-      <span>Subir tu comprobante en este formulario</span>
+      <span class="req-check">✦</span>
+      <span>Subir tu comprobante en el formulario</span>
     </div>
     <div class="requisito-row">
-      <span class="req-check">✓</span>
-      <span>Hacerlo antes del 2 de julio a las 5:00 pm</span>
+      <span class="req-check">✦</span>
+      <span>Hacerlo antes del 3 de julio a las 5:00 pm</span>
     </div>
   </div>
 
@@ -644,143 +483,68 @@
   <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </section>
 
-<!-- COMO INVERTIR -->
-<section class="section">
-  <p class="section-label">Cómo invertir</p>
-  <h2 class="section-title">En 3 pasos, desde tu celular</h2>
-  <p class="section-body">El proceso completo toma menos de 10 minutos.</p>
-
-  <div class="how-step">
-    <div class="how-num">1</div>
-    <div>
-      <p class="how-title">Entra a A2censo</p>
-      <p class="how-body">Crea tu cuenta o inicia sesión en a2censo.com, la plataforma oficial de financiación colaborativa de la Bolsa de Valores de Colombia.</p>
-    </div>
-  </div>
-  <div class="how-step">
-    <div class="how-num">2</div>
-    <div>
-      <p class="how-title">Busca la campaña de Birrería Macha</p>
-      <p class="how-body">Selecciona el monto desde $1.000.000 y elige cuántas acciones quieres a $5.714 cada una.</p>
-    </div>
-  </div>
-  <div class="how-step">
-    <div class="how-num">3</div>
-    <div>
-      <p class="how-title">Confirma y guarda tu comprobante</p>
-      <p class="how-body">A2censo te envía el comprobante por correo. Súbelo arriba para quedar inscrito en la rifa del 2 de julio.</p>
-    </div>
-  </div>
-
-  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=como_invertir&utm_campaign=macha_julio2025&utm_content=btn_pasos" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 1.25rem; max-width: 360px; border-radius: 100px;">Ir a A2censo a invertir →</a>
-</section>
-
-<!-- POR QUE MACHA -->
-<section class="section">
-  <p class="section-label">Por qué Macha</p>
-  <h2 class="section-title">6 años construyendo algo diferente</h2>
-  <p class="section-body">En un mercado donde todas las cervecerías le hablan a hombres mayores de 35, Macha construyó algo fresco, con identidad propia. Y ahora te invita a ser parte.</p>
-
-  <div class="stat-grid">
-    <div class="stat"><div class="stat-num">82%</div><div class="stat-label">Crecimiento anual</div></div>
-    <div class="stat"><div class="stat-num">$2.600M</div><div class="stat-label">Ventas 2025</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Birrerías en Bogotá</div></div>
-    <div class="stat"><div class="stat-num">80+</div><div class="stat-label">Restaurantes aliados</div></div>
-  </div>
-
-  <div class="tags">
-    <span class="tag">Mejor cervecería independiente 2021-22</span>
-    <span class="tag">Mejor cervecería independiente 2024-25</span>
-    <span class="tag">El Tiempo · Portafolio</span>
-  </div>
-
-  <div class="progress-wrap">
-    <div class="progress-meta"><span>Progreso de la ronda</span><span>Meta: $2.000M COP</span></div>
-    <div class="progress-bar"><div class="progress-fill"></div></div>
-    <p class="progress-fine">Ronda activa · Cupos limitados</p>
-  </div>
-
-  <div style="background: var(--pink-light); border-radius: 10px; padding: 1rem; border: 1px solid #f4b8d4; margin-top: 1rem;">
-    <p style="font-size: 12px; font-weight: 500; color: var(--pink-dark); margin-bottom: 8px;">Detalles de la emisión</p>
-    <table class="emision-table">
-      <tr><td>Valoración empresa</td><td>$20.000M COP</td></tr>
-      <tr><td>Monto buscado</td><td>$2.000M COP</td></tr>
-      <tr><td>Participación ofrecida</td><td>10%</td></tr>
-      <tr><td>Precio por acción</td><td>$5.714 COP</td></tr>
-      <tr><td>Inversión mínima</td><td>$1.000.000 (175 acciones)</td></tr>
-    </table>
-  </div>
-</section>
-
-<!-- BENEFICIOS -->
-<section class="section">
-  <p class="section-label">Beneficios</p>
-  <h2 class="section-title">Lo que obtienes como accionista</h2>
-
-  <div class="benefit-list">
-    <div class="benefit-row">
-      <span class="benefit-icon">%</span>
-      <div><p class="benefit-title">10% de descuento vitalicio</p><p class="benefit-sub">En cualquier Birrería Macha, para siempre</p></div>
-    </div>
-    <div class="benefit-row">
-      <span class="benefit-icon">🍺</span>
-      <div><p class="benefit-title">Pinta de accionista</p><p class="benefit-sub">Tu vaso personalizado en la birrería</p></div>
-    </div>
-    <div class="benefit-row">
-      <span class="benefit-icon">🎂</span>
-      <div><p class="benefit-title">Jarra gratis en tu cumpleaños</p><p class="benefit-sub">En cualquier sede, cada año</p></div>
-    </div>
-    <div class="benefit-row">
-      <span class="benefit-icon">🧪</span>
-      <div><p class="benefit-title">Acceso prioritario al lab</p><p class="benefit-sub">Las birras experimentales, primero para ti</p></div>
-    </div>
-    <div class="benefit-row">
-      <span class="benefit-icon">📈</span>
-      <div><p class="benefit-title">Potencial de valorización</p><p class="benefit-sub">Proyección de $45.000M en ventas para 2032</p></div>
-    </div>
-  </div>
-
-  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=beneficios&utm_campaign=macha_julio2025&utm_content=btn_beneficios" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 1.25rem; max-width: 360px; border-radius: 100px;">Invertir ahora desde $1.000.000 →</a>
-</section>
-
 <!-- EVENTO -->
 <section class="evento-section" id="evento">
-  <p class="section-label" style="color: #888;">El evento</p>
-  <div class="evento-date">2 · Jul</div>
-  <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--white); margin-bottom: 4px; font-weight: 400;">Clase magistral + rifa en vivo</h2>
-  <p style="font-size: 13px; color: #aaa; margin-bottom: 1.25rem;">Sede Birrería Macha · 6:00 pm · Bogotá<br>Live simultáneo en Instagram y YouTube</p>
+  <p class="section-label" style="color: var(--blue);">El evento · Entrada libre</p>
+  <div class="evento-date-big">4 · JUL</div>
+  <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem, 9vw, 3.5rem); color: var(--white); margin-bottom: 6px; letter-spacing: 0.01em; line-height: 1;">HABLEMOS<br>DE PLATA</h2>
+  <p style="font-size: 13px; color: #aaa; margin-bottom: 1rem;">Sede Birrería Macha · Bogotá<br>Live simultáneo en Instagram, TikTok y YouTube</p>
+
+  <p style="font-size: 15px; color: #ddd; line-height: 1.75; margin-bottom: 1rem;">Y también... <strong style="color: var(--blue);">¡es el cumpleaños de Ana María!</strong> 🎂 Vamos a celebrar como a ella le gusta: hablando de plata, de poder femenino y brindando con birra.</p>
+
+  <div class="cupos-badge">🔥 SOLO 75 CUPOS PRESENCIALES</div>
 
   <div class="evento-card">
-    <div class="evento-step">
-      <div class="evento-num">1</div>
-      <span>La historia que nadie nos contó: mujeres y dinero</span>
+    <div class="agenda-row">
+      <div class="agenda-time">4PM</div>
+      <div>
+        <p class="agenda-speaker">Puertas abiertas</p>
+        <p class="agenda-topic"><strong>Llegada y bienvenida</strong> — Tómate una pinta, conoce a las demás y disfruta el espacio.</p>
+      </div>
     </div>
-    <div class="evento-step">
-      <div class="evento-num">2</div>
-      <span>Clase magistral de inversión por Su Alex de Confianza</span>
+    <div class="agenda-row">
+      <div class="agenda-time">5PM</div>
+      <div>
+        <p class="agenda-speaker">@larubiainmoral — Ana María Cardona</p>
+        <p class="agenda-topic"><strong>La historia que no nos contaron:</strong> las mujeres y el dinero. ¿Por qué siempre empezamos de otro lado? ¿Cómo hemos administrado hogares por generaciones y aun así nos dijeron que no sabemos de plata?</p>
+      </div>
     </div>
-    <div class="evento-step">
-      <div class="evento-num">3</div>
-      <span>Preguntas en vivo con la audiencia</span>
+    <div class="agenda-row">
+      <div class="agenda-time">6PM</div>
+      <div>
+        <p class="agenda-speaker">@sualexdeconfianza — Alejandro Torres</p>
+        <p class="agenda-topic"><strong>¿Por qué invertir?</strong> Psicología del dinero, diversificación, cómo se construye un portafolio y los tipos de inversión que existen. Sin jerga, sin miedo.</p>
+      </div>
     </div>
-    <div class="evento-step">
-      <div class="evento-num star">★</div>
-      <span>Rifa de una acción de Macha entre todos los inversores</span>
+    <div class="agenda-row">
+      <div class="agenda-time" style="color: var(--orange);">★</div>
+      <div>
+        <p class="agenda-speaker">Cierre</p>
+        <p class="agenda-topic" style="color: var(--white);"><strong>Rifa en vivo</strong> de una acción de Macha entre todos los inversores registrados.</p>
+      </div>
     </div>
   </div>
 
-  <a href="#concurso" class="btn-primary" style="max-width: 100%; border-radius: 100px; margin-bottom: 10px;">Registrar mi inversión para la rifa →</a>
-  <a href="#" class="btn-outline-white">Seguir el live por Instagram</a>
+  <p style="font-size: 12px; color: #777; margin-bottom: 1.25rem;">¿No puedes venir presencialmente? El evento va en live por Instagram, TikTok y YouTube.</p>
+
+  <p style="font-size: 13px; font-weight: 600; color: var(--blue); margin-bottom: 0.75rem;">Reserva tu cupo presencial (75 disponibles)</p>
+  <!-- TODO: Crea el Tally #2 para registro al evento y reemplaza XXXX abajo -->
+  <!-- <iframe data-tally-src="https://tally.so/embed/XXXX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="300" frameborder="0" title="Registro evento"></iframe> -->
+  <a href="#" class="btn-blue">Reservar mi cupo al evento →</a>
+  <a href="https://www.instagram.com/larubiainmoral/" target="_blank" rel="noopener" class="btn-outline-white">Seguir @larubiainmoral en Instagram</a>
 </section>
 
-<!-- QUIENES SOMOS -->
-<section class="section">
+<!-- QUIÉNES SOMOS -->
+<section class="section" id="quienes">
   <p class="section-label">Quiénes somos</p>
-  <h2 class="section-title">Nos asociamos porque creemos en esto</h2>
+  <h2 class="section-title">NOS ASOCIAMOS<br>PORQUE CREEMOS EN ESTO</h2>
+
+  <!-- Cuando tengas la foto de Ana María y Alejandro en JPEG, guárdala como LOCALES/creadores.jpg -->
+  <img src="LOCALES/creadores.jpg" alt="Ana María y Alejandro" style="width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: 10px; margin-bottom: 1.25rem;" onerror="this.style.display='none'">
 
   <div class="creator-card">
     <div class="creator-top">
-      <div class="avatar">AM</div>
+      <div class="creator-avatar">AM</div>
       <div>
         <p class="creator-handle">@larubiainmoral</p>
         <p class="creator-name">Ana María Cardona</p>
@@ -791,38 +555,66 @@
 
   <div class="creator-card">
     <div class="creator-top">
-      <div class="avatar">AT</div>
+      <div class="creator-avatar">AT</div>
       <div>
         <p class="creator-handle">@sualexdeconfianza</p>
         <p class="creator-name">Alejandro Torres · Educador financiero</p>
       </div>
     </div>
-    <p class="creator-quote">"Macha lleva 6 años, creció 82% el año pasado y tiene un equipo con experiencia en AB InBev y SAB Miller. No es una apuesta ciega."</p>
+    <p class="creator-quote">"Macha lleva 6 años, creció 90% el año pasado y tiene un equipo con experiencia en AB InBev y SABMiller. No es una apuesta ciega. Es una empresa real que te invita a crecer con ella."</p>
   </div>
 
   <div class="transparency-note">
-    <strong>Transparencia:</strong> Esta es una alianza comercial. No invertimos plata propia en Macha. Nos compensan en acciones según las inversiones generadas. Lo decimos porque nuestra audiencia se lo merece.
+    <strong>Transparencia:</strong> Esta es una alianza comercial. Nos compensan en acciones según las inversiones generadas. Lo decimos porque nuestra audiencia se lo merece.
+  </div>
+</section>
+
+<!-- PRENSA -->
+<section class="section section-cream" id="prensa">
+  <p class="section-label">Prensa</p>
+  <h2 class="section-title">NOS HAN<br>CUBIERTO</h2>
+  <p style="font-size: 14px; color: #666; margin-bottom: 0.5rem;">Haz clic en cada medio para leer el artículo completo.</p>
+
+  <div class="prensa-grid">
+    <a href="https://www.larepublica.co/ocio/birreria-macha-abre-inversion-desde-1-millon-para-crecer-y-sumar-socios-en-bogota-4360338" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">La República</p></a>
+    <a href="https://www.portafolio.co/negocios/empresas/birreria-macha-proyecta-su-crecimiento-a-la-expectativa-por-ronda-de-inversion-en-plataforma-de-la-bolsa-491455" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Portafolio</p></a>
+    <a href="https://caracol.com.co/2026/03/26/desde-un-millon-bolsa-de-valores-une-inversionistas-con-empresas-colombianas-e-impulsa-crecimiento/" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Caracol Radio</p></a>
+    <a href="https://www.msn.com/es-co/noticias/other/cerveza-artesanal-busca-inversionistas-en-la-bolsa-de-colombia-as%C3%AD-puede-participar-desde-1-mill%C3%B3n/ar-AA1ZtblM" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">MSN Colombia</p></a>
+    <a href="https://economiaydesarrollo.com/cervecera-colombiana-lanzo-campana-de-acciones-para-impulsar-su-crecimiento-2/" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Economía y Desarrollo</p></a>
+    <a href="https://www.portafolio.co/economia/finanzas/cerveza-artesanal-busca-inversionistas-en-la-bolsa-de-colombia-asi-puede-participar-desde-1-millon-490821" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Portafolio</p></a>
+    <a href="https://valoraanalitik.com/invertir-birreria-macha-acciones-colombia/" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Valora Analitik</p></a>
+    <a href="https://technocio.com/birreria-macha-abre-inversion-para-sumar-nuevos-socios-y-crecer-en-bogota/" target="_blank" rel="noopener" class="prensa-item"><p class="prensa-name">Technocio</p></a>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="section">
+<section class="section" id="faq">
   <p class="section-label">Preguntas frecuentes</p>
+  <h2 class="section-title">RESOLVEMOS<br>TUS DUDAS</h2>
+
   <div class="faq-item">
     <p class="faq-q">¿Cómo sé que realmente soy accionista?</p>
-    <p class="faq-a">A2censo es la plataforma oficial de la Bolsa de Valores de Colombia. Al invertir recibes un comprobante oficial y quedas registrado como accionista.</p>
+    <p class="faq-a">Al invertir por A2censo recibes un comprobante oficial y quedas registrada como accionista. A2censo es la plataforma oficial de la Bolsa de Valores de Colombia, supervisada por la Superfinanciera.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">¿Puedo perder mi plata?</p>
-    <p class="faq-a">Toda inversión tiene riesgo y es importante decirlo. Macha es un negocio que ya funciona con 6 años de operación, pero ninguna inversión garantiza retorno.</p>
+    <p class="faq-a">Sí. Toda inversión tiene riesgo y es importante decirlo. Macha lleva 6 años con crecimiento constante, pero ninguna inversión garantiza retorno. No inviertas plata que necesites en el corto plazo.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">¿Cómo participo en la rifa?</p>
-    <p class="faq-a">Invierte antes del 2 de julio y sube tu comprobante en el formulario de arriba. Eso te inscribe automáticamente. El sorteo es en vivo en el evento.</p>
+    <p class="faq-a">Invierte antes del <strong>3 de julio a las 5:00 pm</strong> y sube tu comprobante en el formulario de esta página. Eso te inscribe automáticamente. El sorteo es en vivo el 4 de julio.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">¿Puedo ir al evento aunque no haya invertido?</p>
-    <p class="faq-a">Sí, puedes asistir y seguirlo en vivo. Pero para participar en la rifa necesitas haber invertido y registrado tu comprobante antes de las 5:00 pm del 2 de julio.</p>
+    <p class="faq-a">Sí, el evento es de entrada libre. Pero para participar en la rifa necesitas haber invertido y registrado tu comprobante antes del 3 de julio a las 5:00 pm. Son solo 75 cupos presenciales.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">¿Puedo ver el evento online?</p>
+    <p class="faq-a">Sí. Habrá live simultáneo en Instagram, TikTok y YouTube. Síguenos para no perdértelo.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">¿Cuándo vería retorno sobre mi inversión?</p>
+    <p class="faq-a">Esta es una inversión de largo plazo. La valorización ocurre a medida que Macha crece. Los dividendos dependen de las utilidades. No hay una fecha garantizada de retorno.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">¿Qué pasa con el descuento del 10% y los otros beneficios?</p>
@@ -832,46 +624,22 @@
 
 <!-- CIERRE -->
 <section class="cierre">
-  <h2 class="cierre-title">¿Lista para ser<br><em>accionista</em>?</h2>
-  <p class="cierre-sub">Desde $1.000.000 · A través de la Bolsa de Valores de Colombia<br>Rifa en vivo el 2 de julio</p>
-  <div style="max-width: 360px; margin: 0 auto;">
-    <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=cierre&utm_campaign=macha_julio2025&utm_content=btn_cierre" target="_blank" rel="noopener" class="btn-primary">Invertir en Birrería Macha →</a>
-  </div>
+  <h2 class="cierre-title">¿LISTA PARA<br>SER DUEÑA<br>DE UNA<br>BIRRERÍA?</h2>
+  <p class="cierre-sub">Desde $1.000.000 · A través de la Bolsa de Valores de Colombia<br>Evento 4 de julio · 75 cupos presenciales</p>
+  <a href="https://a2censo.com/campaignNew/2325?utm_source=lasqueinvierten&utm_medium=cierre&utm_campaign=macha_julio2025" target="_blank" rel="noopener" class="btn-white">Invertir en Birrería Macha →</a>
   <p class="cierre-fine">lasqueinvierten.com · @larubiainmoral × @sualexdeconfianza</p>
 </section>
 
 <script>
-  // Formulario: mostrar mensaje de éxito
-  const form = document.getElementById('concurso-form');
-  const success = document.getElementById('form-success');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      // Si usas Formspree, ellos manejan el submit via fetch
-      // Este código muestra el mensaje de éxito visualmente
-      setTimeout(function() {
-        if (success) {
-          success.style.display = 'block';
-          form.reset();
-        }
-      }, 800);
-    });
-  }
-
-  // Animación suave del contador al entrar en viewport
   const counter = document.getElementById('contador');
-  // ACTUALIZA ESTE NÚMERO manualmente cuando quieras cambiar el conteo
   const targetCount = 0;
-  
   if (counter && targetCount > 0) {
     const observer = new IntersectionObserver(function(entries) {
       if (entries[0].isIntersecting) {
         let count = 0;
         const interval = setInterval(function() {
           count += Math.ceil(targetCount / 30);
-          if (count >= targetCount) {
-            count = targetCount;
-            clearInterval(interval);
-          }
+          if (count >= targetCount) { count = targetCount; clearInterval(interval); }
           counter.textContent = count;
         }, 40);
         observer.disconnect();
