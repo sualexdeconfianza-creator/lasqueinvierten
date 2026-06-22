@@ -662,22 +662,21 @@
 </section>
 
 <script>
-  const counter = document.getElementById('contador');
-  const targetCount = 0;
-  if (counter && targetCount > 0) {
-    const observer = new IntersectionObserver(function(entries) {
-      if (entries[0].isIntersecting) {
-        let count = 0;
-        const interval = setInterval(function() {
-          count += Math.ceil(targetCount / 30);
-          if (count >= targetCount) { count = targetCount; clearInterval(interval); }
-          counter.textContent = count;
-        }, 40);
-        observer.disconnect();
-      }
-    });
-    observer.observe(counter);
-  }
+  fetch('https://script.google.com/macros/s/AKfycbylNLHsX2uvpimx5sMw_2KIM_Mo-ynf9AF4C5geqmIfbuYZwm4-nKVW9RmrUak0zzvHzQ/exec')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var counter = document.getElementById('contador');
+      if (!counter) return;
+      var target = data.count || 0;
+      if (target === 0) return;
+      var count = 0;
+      var interval = setInterval(function() {
+        count += Math.ceil(target / 30);
+        if (count >= target) { count = target; clearInterval(interval); }
+        counter.textContent = count;
+      }, 40);
+    })
+    .catch(function() {});
 </script>
 
 </body>
