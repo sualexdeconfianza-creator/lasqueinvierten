@@ -667,7 +667,7 @@
     .then(function(data) {
       var counter = document.getElementById('contador');
       if (!counter) return;
-      var target = data.count || 0;
+      var target = (data.count || 0) + 18;
       if (target === 0) return;
       var count = 0;
       var interval = setInterval(function() {
